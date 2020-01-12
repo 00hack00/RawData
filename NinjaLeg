@@ -1,1 +1,2 @@
-dwdwadawd
+_G.PlaceLoopTP = false -- Set to true for more teleports (Mainly used for afk overnight)
+loadstring(game:HttpGet(('https://pastebin.com/raw/sjVGvJ1S'),true))()
