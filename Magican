@@ -1,0 +1,20 @@
+local oh1 = 1574965440.795
+while wait() do
+pcall(function ()
+game.Players.LocalPlayer.PlayerGui.MainUI.AddStatBox.ChildAdded:Connect(function(c)
+c:Destroy()
+end)
+game.Players.LocalPlayer.PlayerGui.MainUI.AddStatBox2.ChildAdded:Connect(function(c)
+c:Destroy()
+end)
+game.Players.LocalPlayer.PlayerGui.MainUI.AddStatBox3.ChildAdded:Connect(function(c)
+c:Destroy()
+end)
+local oh2 = game:GetService("Players").LocalPlayer.Backpack:FindFirstChildOfClass("Tool") or game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+
+game:GetService("ReplicatedStorage").Events.Fired:FireServer(oh1, oh2)
+for i , c in pairs(game.Workspace.Coins:GetChildren()) do
+    c.PrimaryPart.CFrame = game.Players.LocalPlayer.Character.Head.CFrame
+end
+end)
+end
