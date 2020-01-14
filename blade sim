@@ -1,0 +1,11 @@
+while wait() do  
+local A_1 = math.huge
+local Event = game:GetService("ReplicatedStorage").Swing
+Event:FireServer(A_1)
+local A_ = "Armor"
+local Even = game:GetService("ReplicatedStorage").Buy
+Even:FireServer(A_)
+local A1 = "Rank"
+local vent = game:GetService("ReplicatedStorage").Buy
+vent:FireServer(A1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.6004, 48.443, -96.0819)
