@@ -1,0 +1,4 @@
+--UI Library
+getgenv().Veranium = loadstring(game:HttpGet("http://ivyx.xyz/Veranium/VeraniumVXI.lua"))();
+--Actual Script
+loadstring(game:HttpGet("http://ivyx.xyz/DDReleases/FE2.lua"))();
