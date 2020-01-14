@@ -1,0 +1,3 @@
+game.ReplicatedStorage.SwitchStatsValueAdd:FireServer('Cash',10e+18)
+game.ReplicatedStorage.SwitchLeaderstats:FireServer('Speed', 1e+18)
+game.ReplicatedStorage.SwitchLeaderstats:FireServer('Rebirths', 9999999)
