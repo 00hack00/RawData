@@ -1,0 +1,1 @@
+game:GetService("Workspace").DiamondStoreEvents.AddMoney:FireServer("1000000000000")
