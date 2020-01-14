@@ -1,0 +1,8 @@
+_G.Toggle = true
+
+while true do
+   if _G.Toggle then
+       game:GetService("ReplicatedStorage").Damage:FireServer("9999") --Change number if you want
+   end
+   wait()
+end
