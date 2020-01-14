@@ -1,0 +1,4 @@
+while wait (0.1) do 
+
+game.ReplicatedStorage.Events.Simulator.ProcessSim:InvokeServer()
+end
