@@ -1,0 +1,8 @@
+for _,v in pairs(workspace.Pickups:GetChildren()) do
+if v:IsA("MeshPart") then
+v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+elseif v:IsA("Model") then
+v:FindFirstChild(v.Name).CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+wait()
+end
