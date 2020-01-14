@@ -1,0 +1,57 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/eWKgbdix", true))()
+local a = library:CreateWindow('Cheats') local UIName = math.random(1000,9999) game:GetService("CoreGui").ScreenGui.Name = UIName
+a:Section('--= Mods =--')
+a:Toggle('Infinite Speed', {flag = "InfS"})
+a:Toggle('Infinite Rebirths', {flag = "InfR"})
+spawn(function()
+   while wait() do
+       if a.flags.InfS == true then
+           for x=0,10 do
+               game:GetService("ReplicatedStorage").SwitchLeaderstats:FireServer("Speed", 10000000000000)
+           end
+       end
+       if a.flags.InfR == true then
+           for x=0,10 do
+               game:GetService("ReplicatedStorage").SwitchLeaderstats:FireServer("Rebirths", 10000000000000)
+           end
+       end
+   end
+end)
+a:Section('--= Change Stats =--')
+a:Box('Speed', {
+   flag = "ws";
+   type = 'number';
+}, function(new, old, enter)
+   print(new, old, enter)
+   game:GetService("ReplicatedStorage").SwitchLeaderstats:FireServer("Speed", new)
+end)
+a:Box('Rebirths', {
+   flag = "ws";
+   type = 'number';
+}, function(new, old, enter)
+   print(new, old, enter)
+   game:GetService("ReplicatedStorage").SwitchLeaderstats:FireServer("Rebirths", new)
+end)
+local b = library:CreateWindow('Credits')
+b:Section('Wally - UI Library')
+b:Section('therealDEXLTH - Scripting')
+local c = library:CreateWindow('GUI')
+c:Button("Destroy GUI", function()
+   game.CoreGui[UIName]:Destroy()
+end)
+c:Button("Rejoin", function()
+   game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+end)
+c:Bind("Hide Gui", {
+   flag = "killbind";
+   kbonly = true;
+   default = Enum.KeyCode.RightShift;
+}, function()
+   for i,v in pairs(game:GetService("CoreGui")[UIName]:GetChildren()) do
+       if v.Visible == false then
+           v.Visible = true
+       else
+           v.Visible = false
+       end
+   end
+end)
