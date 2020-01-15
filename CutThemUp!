@@ -88,5 +88,3 @@ Abizzar[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/Raw
 [-]FactionDef[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/faction%20def"));
 [-]ExtremeSprinting[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/extreme%20sprinting"));
 [-]DungeonSim[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/dungeon%20sim"));
-[-]WorkAtPizzaPlace[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/drifting%20sim"));
-[-]WorkAtPizzaPlace[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/dragon%20ball%20rage"));
