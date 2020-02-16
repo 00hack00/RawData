@@ -88,3 +88,5 @@ Abizzar[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/Raw
 [-]FactionDef[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/faction%20def"));
 [-]ExtremeSprinting[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/extreme%20sprinting"));
 [-]DungeonSim[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/dungeon%20sim"));
+[-]galacticheros[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/galacticheros"));
+[-]sprintingheros[+]loadstring(game:HttpGet("https://raw.githubusercontent.com/Allazeu/RawData/master/sprintingheros"));
